@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 64px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 108px;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.sec1 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.sec2 {
+    margin-top: 138px;
+    position: relative;
+    margin-bottom: 108px;
+    padding: 32px 32px 64px 32px;
+    .section-number {
+        top: -28px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        h1 {
+            position: relative;
+            display: inline-block;
+            padding: 16px 20px 16px 20px;
+            border: 1.5px solid #d1d1df;
+            border-radius: 100px;
+            line-height: 1.5;
+            font-size: 16px;
+            color: #87879d;
+            margin: 0px;
+            font-weight: 900;
+            background-color: #fafafa;
+        }
+        h1::before {
+            content: '';
+            position: absolute;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 80px;
+            border: 1px solid #d1d1df;
+        }
+    }
+    .sec2grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+    img {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .container {
+        padding: 0px;
+        h1 {
+            color: #4d96a9;
+            font-size: 1rem;
+            line-height: 1.1;
+            font-weight: 900;
+            letter-spacing: 4px;
+        }
+        h2 {
+            color: #28283d;
+            font-size: 2.5rem;
+            line-height: 1.1;
+            font-weight: 900;
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+        p {
+            color: #87879d;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            font-weight: 500;
+            margin: 0px;
+        }
+    }
+}
+
+.whatisit {
+            width: 161px;
+            padding: 12px 40px 12px 40px;
+            background-color: #855fb1;
+            border-radius: 29px;
+            border: none;
+            h1 {
+                font-family: "Red Hat Display", sans-serif;
+                font-size: 1rem;
+                color: #fafafa;
+                line-height: 1.5;
+            }
+        }
+
+footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative; 
+    background: linear-gradient(rgba(77,150,169, 0.85), rgba(77,150,169, 0.85)),
+    url("./assets/mobile/image-footer.jpg") no-repeat;
+    background-size: cover;
+    padding: 64px 32px 0 32px;
+    .section-number {
+        top: -28px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        h1 {
+            position: relative;
+            display: inline-block;
+            padding: 16px 18px 16px 18px;
+            border: 1.5px solid #d1d1df;
+            border-radius: 100px;
+            line-height: 1.5;
+            font-size: 16px;
+            color: #87879d;
+            margin: 0px;
+            font-weight: 900;
+            background-color: #fafafa;
+        }
+        h1::before {
+            content: '';
+            position: absolute;
+            top: -80px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 80px;
+            border: 1px solid #d1d1df;
+        }
+    }
+    .container {
+        padding: 0px;
+        h1 {
+            color: #fafafa;
+            font-size: 2.5rem;
+            line-height: 1.1;
+            font-weight: 900;
+        }
+        p {
+            color: #fafafa;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            font-weight: 500;
+            margin: 24px 0 24px 0;
+        }
+    }
+    .download {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 56px;
+        width: 193px;
+        padding: 16px 40px 16px 40px;
+        background-color: #855fb1;
+        border-radius: 29px;
+        border: none;
+        margin-bottom: 64px;
+        h1 {
+            font-family: "Red Hat Display", sans-serif;
+            font-size: 1rem;
+            color: #fafafa;
+            line-height: 1.5;
+            margin: 0px;
+            display: inline-block;
+        }
+        p {
+            font-family: "Red Hat Display", sans-serif;
+            font-size: 1rem;
+            color: #d9b8ff;
+            display: inline-block;
+            margin: 0 0 0 4px;
+            font-weight: bold;
+            line-height: 1.5;
+            
+        }
+    }
+}
+
+.hero-big {
+    display: flex;
+    justify-content: center;
+    width: 120%;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow: hidden;
+    img {
+        width: 120%;
+    }
+}
+
+.hero-left, .hero-right {
+    display: none;
+    img {
+        width: 100%;
+    }
+}
+
+.intro {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        color: #28283d;
+        font-size: 4rem;
+        line-height: 1.1;
+        margin: 0px;
+        font-weight: 900;
+    }
+    p {
+        color: #87879d;
+        margin: 24px 0 24px 0;
+        font-size: 1.125rem;
+        line-height: 1.1;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1 {
+            font-family: "Red Hat Display", sans-serif;
+            font-size: 1rem;
+            color: #fafafa;
+            line-height: 1.5;
+        }
+        .download {
+            width: 193px;
+            height: 56px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 40px 12px 40px;
+            background-color: #4d96a9;
+            border-radius: 29px;
+            border: none;
+            margin-bottom: 16px;
+            p {
+                font-family: "Red Hat Display", sans-serif;
+                font-size: 1rem;
+                color: #8fe3f9;
+                display: inline-block;
+                margin: 0 0 0 4px;
+                font-weight: bold;
+                line-height: 1.5;
+                
+            }
+        }
+        .whatisit {
+            width: 161px;
+            padding: 12px 40px 12px 40px;
+            background-color: #855fb1;
+            border-radius: 29px;
+            border: none;
+            h1 {
+                font-family: "Red Hat Display", sans-serif;
+                font-size: 1rem;
+                color: #fafafa;
+                line-height: 1.5;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    footer {
+        background: linear-gradient(rgba(77,150,169, 0.85), rgba(77,150,169, 0.85)),
+        url("./assets/desktop/image-footer.jpg") no-repeat center;
+        background-size: cover;
+        .footer-text {
+            width: 504px;
+        }
+    }
+    .sec2 {
+        .text-center {
+            width: 504px;
+        }
+    }
+    .intro {
+        margin-top: 72px;
+        width: 448.3px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    footer {
+        align-items: flex-start;
+        padding: 112px 160px 112px 160px;
+        justify-content: center;
+        flex-direction: row;
+        .footer-text {
+            margin: 0px;
+            display: flex;
+            width: auto;
+            h1 {
+                text-align: left;
+                margin: 0px;
+            }
+            p {
+                width: 335px;
+                text-align: left;
+                margin: 0px 140px 0px 140px;
+            }
+        }
+        .download {
+            margin: 0px;
+            width: 193px;
+        }
+    }
+    .sec2 {
+        .text-center {
+            width: 544px;
+        }
+    }
+}
