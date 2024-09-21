@@ -200,14 +200,12 @@ footer {
 }
 
 .hero-big {
-    display: flex;
-    justify-content: center;
-    width: 120%;
-    margin-left: -10px;
-    margin-right: -10px;
-    overflow: hidden;
+    overflow: hidden; /* ซ่อนส่วนที่เกินของรูป */
+    position: relative; /* ช่วยในการจัดการตำแหน่งของรูปภาพ */
     img {
-        width: 120%;
+        width: 120%; /* ขยายรูปภาพให้ใหญ่กว่า container */
+    margin-left: -10%; /* เลื่อนภาพไปทางซ้าย */
+    object-fit: cover; /* ให้ภาพครอบคลุมพื้นที่ */
     }
 }
 
