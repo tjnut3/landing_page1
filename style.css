@@ -25,6 +25,7 @@ body {
 .sec1 {
     padding-left: 32px;
     padding-right: 32px;
+    overflow: hidden;
 }
 
 .sec2 {
@@ -200,12 +201,11 @@ footer {
 }
 
 .hero-big {
-    overflow: hidden; /* ซ่อนส่วนที่เกินของรูป */
-    position: relative; /* ช่วยในการจัดการตำแหน่งของรูปภาพ */
+    display: flex;
+    justify-content: center;
     img {
-        width: 120%; /* ขยายรูปภาพให้ใหญ่กว่า container */
-    margin-left: -10%; /* เลื่อนภาพไปทางซ้าย */
-    object-fit: cover; /* ให้ภาพครอบคลุมพื้นที่ */
+        width: 130%;
+        object-fit: cover;
     }
 }
 
@@ -270,6 +270,7 @@ footer {
         }
         .whatisit {
             width: 161px;
+            height: 56px;
             padding: 12px 40px 12px 40px;
             background-color: #855fb1;
             border-radius: 29px;
@@ -301,10 +302,30 @@ footer {
     .intro {
         margin-top: 72px;
         width: 448.3px;
+        .button-container {
+            flex-direction: row;
+            .download {
+                margin: 0px 17px 0px 0px;
+            }
+        }
     }
+
 }
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1400px) {
+    .hero-left {
+        display: block;
+        position: relative;
+        left: -3.5%;
+    }
+    .hero-right {
+        display: block;
+        position: relative;
+        right: -3.5%;
+    }
+    .hero-big {
+        display: none;
+    }
     footer {
         align-items: flex-start;
         padding: 112px 160px 112px 160px;
@@ -333,5 +354,15 @@ footer {
         .text-center {
             width: 544px;
         }
+    }
+    .intro {
+        width: 448.3px;
+        p {
+            margin-top: 32px;
+            margin-bottom: 32px;
+        }
+    }
+    .row {
+        margin-bottom: 3rem;
     }
 }
